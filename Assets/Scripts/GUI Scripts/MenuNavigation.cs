@@ -33,4 +33,8 @@ public class MenuNavigation : MonoBehaviour {
 	{
 		Application.OpenURL("https://github.com/vilbeyli/Pacman-Clone/");
 	}
+
+    public void LevelSelector() {
+        Application.LoadLevel("level_selector");
+    }
 }
