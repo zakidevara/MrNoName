@@ -4,6 +4,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
+
     public Joystick joystick;
     public float speed = 0.4f;
     Vector2 _dest = Vector2.zero;
@@ -111,11 +112,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0) _nextDir = -Vector2.right;
         if (Input.GetAxis("Vertical") > 0) _nextDir = Vector2.up;
         if (Input.GetAxis("Vertical") < 0) _nextDir = -Vector2.up;
-        //get input from joystick
-        if (joystick.Horizontal > 0.4) _nextDir = Vector2.right;
-        if (joystick.Horizontal < -0.4) _nextDir = -Vector2.right;
-        if (joystick.Vertical > 0.4) _nextDir = Vector2.up;
-        if (joystick.Vertical < -0.4) _nextDir = -Vector2.up;
+
+        if (joystick.Horizontal > 0.4)_nextDir = Vector2.right;
+        if (joystick.Horizontal < -0.4)_nextDir = -Vector2.right;
+        if (joystick.Vertical > 0.4)_nextDir = Vector2.up;
+        if (joystick.Vertical < -0.4)_nextDir = -Vector2.up;
 
         // if pacman is in the center of a tile
         if (Vector2.Distance(_dest, transform.position) < 0.00001f)
