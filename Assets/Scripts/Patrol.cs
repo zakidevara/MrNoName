@@ -6,6 +6,7 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour
 {
+
     public float speed;
     private float waitTime;
     public float startWaitTime;
@@ -30,6 +31,7 @@ public class Patrol : MonoBehaviour
             waitTime -= Time.deltaTime;
         }
     }
+
 
 
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a12b4433ef912fd4384efe221e5e8042
+guid: 112ebc1ceccce1b4d80e1e95fbc7835c
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -31,11 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 0
-=======
     filterMode: -1
->>>>>>> kresna
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -46,27 +42,15 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-<<<<<<< HEAD
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5290698, y: 0.21899216}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
-=======
-  spriteMeshType: 0
-  alignment: 9
-  spritePivot: {x: 0.5161499, y: 0.20284235}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 19, y: 0, z: 17, w: 55}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 1
   spriteTessellationDetail: -1
->>>>>>> kresna
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -79,11 +63,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> kresna
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,11 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> kresna
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,26 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> kresna
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> kresna
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,33 +94,10 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-<<<<<<< HEAD
-    outline:
-    - - {x: -32, y: -48}
-      - {x: -27, y: -11}
-      - {x: -18, y: -7}
-      - {x: -18, y: -18}
-      - {x: 2, y: -18}
-      - {x: 21, y: -18}
-      - {x: 24, y: -7}
-      - {x: 32, y: -11}
-      - {x: 35, y: -48}
-    physicsShape:
-    - - {x: -32, y: -47}
-      - {x: -27, y: -12}
-      - {x: -19, y: -7}
-      - {x: -17, y: -18}
-      - {x: 2, y: -18}
-      - {x: 22, y: -18}
-      - {x: 24, y: -6}
-      - {x: 32, y: -11}
-      - {x: 34, y: -46}
-=======
     outline: []
     physicsShape: []
->>>>>>> kresna
     bones: []
-    spriteID: d9f77d2f90154c3478ae6ba056017b8c
+    spriteID: 
     vertices: []
     indices: 
     edges: []
