@@ -7,44 +7,32 @@ using System.Collections;
 public class Patrol : MonoBehaviour
 {
 
-    public Transform[] points;
-    private int destPoint = 0;
-    private NavMeshAgent agent;
+    public float speed;
+    private float waitTime;
+    public float startWaitTime;
 
-
+    public Transform[] moveSpots;
+    private int nextSpot;
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-
-        // Disabling auto-braking allows for continuous movement
-        // between points (ie, the agent doesn't slow down as it
-        // approaches a destination point).
-        agent.autoBraking = false;
-
-        GotoNextPoint();
+        waitTime = startWaitTime;
+        nextSpot = 0;
     }
-
-
-    void GotoNextPoint()
-    {
-        // Returns if no points have been set up
-        if (points.Length == 0)
-            return;
-
-        // Set the agent to go to the currently selected destination.
-        agent.destination = points[destPoint].position;
-
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
-        destPoint = (destPoint + 1) % points.Length;
-    }
-
 
     void Update()
     {
-        // Choose the next destination point when the agent gets
-        // close to the current one.
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
-            GotoNextPoint();
+        transform.position = Vector2.MoveTowards(transform.position, moveSpots[nextSpot].position, speed * Time.deltaTime);
+        if (Vector2.Distance(transform.position, moveSpots[nextSpot].position) < 0.2f) {
+            if (nextSpot == moveSpots.Length - 1) nextSpot = 0;
+            else nextSpot++;
+            waitTime = startWaitTime;
+        }
+        else {
+            waitTime -= Time.deltaTime;
+        }
     }
+
+
+
+
 }
