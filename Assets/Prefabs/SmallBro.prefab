@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 435195799682374653}
   - component: {fileID: 435195799682374652}
   - component: {fileID: 435195799682374627}
+  - component: {fileID: 6155299688660480038}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435195799682374625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8141d65fc0d2c604fa67b382f6f5c73c, type: 3}
   m_Name: 
@@ -220,6 +221,18 @@ MonoBehaviour:
   GUINav: {fileID: 0}
   pacman: {fileID: 0}
   DISTANCE: 0
+--- !u!114 &6155299688660480038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435195799682374625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e779d083dae2f4490e11614e63cdd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &435195799909756582
 GameObject:
   m_ObjectHideFlags: 0
