@@ -312,7 +312,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pac-Man Clone
+  m_Text: Mr.NoName
 --- !u!222 &107202375
 CanvasRenderer:
   m_ObjectHideFlags: 0
