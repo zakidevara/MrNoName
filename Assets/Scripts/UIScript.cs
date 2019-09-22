@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour {
 
-	public int high, score;
+	public int high, score, level;
 
 	public List<Image> lives = new List<Image>(3);
 
@@ -34,7 +34,7 @@ public class UIScript : MonoBehaviour {
         score = GameManager.score;
 		txt_score.text = "Score\n" + score;
 		txt_high.text = "High Score\n" + high;
-	    txt_level.text = "Level\n" + (GameManager.Level + 1);
+	    txt_level.text = "Level\n" + level;
 
 	}
 

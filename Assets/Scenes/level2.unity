@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7100,6 +7100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939266473}
   - component: {fileID: 939266472}
+  - component: {fileID: 939266474}
   m_Layer: 0
   m_Name: UI Manager
   m_TagString: Untagged
@@ -7114,7 +7115,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939266471}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50657a48ab4cd5d4cab5acf55d0665df, type: 3}
   m_Name: 
@@ -7127,6 +7128,7 @@ MonoBehaviour:
   ErrorCanvas: {fileID: 1557083313}
   GameOverCanvas: {fileID: 1899690195}
   MenuButton: {fileID: 1123314309}
+  HT: {fileID: 0}
 --- !u!4 &939266473
 Transform:
   m_ObjectHideFlags: 0
@@ -7141,6 +7143,27 @@ Transform:
   m_Father: {fileID: 1419874112}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939266474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939266471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32650b266ee6ff40a477d618b1e5988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialDelay: 1
+  PauseCanvas: {fileID: 1403547056}
+  QuitCanvas: {fileID: 79004843}
+  ReadyCanvas: {fileID: 737924477}
+  ScoreCanvas: {fileID: 510133266}
+  ErrorCanvas: {fileID: 1557083313}
+  GameOverCanvas: {fileID: 1899690195}
+  MenuButton: {fileID: 1123314309}
+  HT: {fileID: 0}
 --- !u!1 &946300911
 GameObject:
   m_ObjectHideFlags: 0
@@ -8391,6 +8414,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dynamic Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8505,16 +8538,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapY
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
@@ -12460,6 +12483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   high: 0
   score: 0
+  level: 2
   lives:
   - {fileID: 1540421055}
   - {fileID: 1719195383}
@@ -14103,6 +14127,7 @@ GameObject:
   - component: {fileID: 1682226686}
   - component: {fileID: 1682226685}
   - component: {fileID: 1682226684}
+  - component: {fileID: 1682226688}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -14129,7 +14154,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682226683}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a69aa6a4121ee1429846b7e049dc8fd, type: 3}
   m_Name: 
@@ -14162,6 +14187,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682226688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682226683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96e6f5ece189454a949f01c18b2360a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnX: -0.5
+  respawnY: -12.51
+  scareLength: 7
+  SpeedPerLevel: 0
 --- !u!1 &1693721197
 GameObject:
   m_ObjectHideFlags: 0
@@ -15061,6 +15102,11 @@ PrefabInstance:
       value: -12.51
       objectReference: {fileID: 0}
     - target: {fileID: 5921925120850772994, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1977446852}
+    - target: {fileID: 1610684663800514669, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: joystick
       value: 
