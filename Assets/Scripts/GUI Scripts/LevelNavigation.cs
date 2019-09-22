@@ -8,4 +8,24 @@ public class LevelNavigation : MonoBehaviour
         Application.LoadLevel("level1");
 
     }
+    public void level2()
+    {
+        Application.LoadLevel("level2");
+
+    }
+    public void level3()
+    {
+        Application.LoadLevel("level3");
+
+    }
+    public void level4()
+    {
+        Application.LoadLevel("level5");
+
+    }
+    public void level5()
+    {
+        Application.LoadLevel("level5");
+
+    }
 }
