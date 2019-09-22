@@ -6,7 +6,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
 {
 
     public Joystick joystick;
-    public float speed = 0.4f;
+    public float speed = 0.2f;
     Vector2 _dest = Vector2.zero;
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
@@ -22,9 +22,10 @@ public class PlayerControllerStoryMode : MonoBehaviour
     public static int killstreak = 0;
 
     // script handles
-    private GameGUINavigation GUINav;
+    private GameGUINavigationStory GUINav;
     private GameManagerStoryMode GM;
     private ScoreManager SM;
+    private highscoreTable HT;
 
     private bool _deadPlaying = false;
 
@@ -33,7 +34,8 @@ public class PlayerControllerStoryMode : MonoBehaviour
     {
         GM = GameObject.Find("Game Manager").GetComponent<GameManagerStoryMode>();
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
-        GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigation>();
+        GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigationStory>();
+        HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
         _dest = transform.position;
     }
 
@@ -66,11 +68,8 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
         if (GameManagerStoryMode.lives <= 0)
         {
-            Debug.Log("Treshold for High Score: " + SM.LowestHigh());
-            if (GameManagerStoryMode.score >= SM.LowestHigh())
-                GUINav.getScoresMenu();
-            else
-                GUINav.H_ShowGameOverScreen();
+            
+            GUINav.H_ShowGameOverScreen();
         }
 
         else
@@ -147,8 +146,10 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
         // limit killstreak at 4
         if (killstreak > 4) killstreak = 4;
-
-        Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
+        if (killstreak - 1 < points.pointSprites.Length)
+        {
+            Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
+        }
         GameManagerStoryMode.score += (int)Mathf.Pow(2, killstreak) * 100;
 
     }
