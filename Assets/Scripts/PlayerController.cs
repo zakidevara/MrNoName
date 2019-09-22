@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private GameGUINavigation GUINav;
     private GameManager GM;
     private ScoreManager SM;
+    private highscoreTable HT;
 
     private bool _deadPlaying = false;
 
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         GM = GameObject.Find("Game Manager").GetComponent<GameManager>();
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigation>();
+        HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
         _dest = transform.position;
     }
 
@@ -66,9 +68,11 @@ public class PlayerController : MonoBehaviour
 
         if (GameManager.lives <= 0)
         {
-            Debug.Log("Treshold for High Score: " + SM.LowestHigh());
-            if (GameManager.score >= SM.LowestHigh())
+            Debug.Log("Treshold for High Score: " + HT.lowestHighscores());
+            if (GameManager.score >= HT.lowestHighscores()) {
                 GUINav.getScoresMenu();
+                Debug.Log("highscoress entered");
+            }
             else
                 GUINav.H_ShowGameOverScreen();
         }
@@ -147,8 +151,9 @@ public class PlayerController : MonoBehaviour
 
         // limit killstreak at 4
         if (killstreak > 4) killstreak = 4;
-
-        Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
+        if (killstreak - 1 < points.pointSprites.Length) {
+            Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
+        }
         GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
 
     }

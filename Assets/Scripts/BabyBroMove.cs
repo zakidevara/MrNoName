@@ -6,13 +6,13 @@ using UnityEngine;
 public class BabyBroMove : MonoBehaviour
 {
 
-    private GameManager _gm;
+    private GameManagerStoryMode _gm;
 
     //-----------------------------------------------------------------------------------------
     // variables end, functions begin
     void Start()
     {
-        _gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        _gm = GameObject.Find("Game Manager").GetComponent<GameManagerStoryMode>();
     }
 
 
