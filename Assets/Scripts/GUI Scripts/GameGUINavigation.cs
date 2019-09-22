@@ -27,12 +27,17 @@ public class GameGUINavigation : MonoBehaviour {
 	// buttons
 	public Button MenuButton;
 
+
+    //Highscore Table
+    public highscoreTable HT; 
+
 	//------------------------------------------------------------------
 	// Function Definitions
 
 	// Use this for initialization
 	void Start () 
 	{
+        HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
 		StartCoroutine("ShowReadyScreen", initialDelay);
 	}
 	
@@ -92,6 +97,7 @@ public class GameGUINavigation : MonoBehaviour {
 		GameManager.gameState = GameManager.GameState.Scores;
 		MenuButton.enabled = false;
 		ScoreCanvas.enabled = true;
+        GameObject.Find("Joystick").SetActive(false);
 	}
 
 	//------------------------------------------------------------------
@@ -147,6 +153,7 @@ public class GameGUINavigation : MonoBehaviour {
 	    GameManager.DestroySelf();
 	}
 
+    //Adding highcore entry to database
     IEnumerator AddScore(string name, int score)
     {
         string privateKey = "pKey";
@@ -198,20 +205,21 @@ public class GameGUINavigation : MonoBehaviour {
         return hashString.PadLeft(32, '0');
     }
 
-	public void SubmitScores()
+     
+    public void SubmitScores()
 	{
-		// Check username, post to database if its good to go
+		
 	    int highscore = GameManager.score;
         string username = ScoreCanvas.GetComponentInChildren<InputField>().GetComponentsInChildren<Text>()[1].text;
         Regex regex = new Regex("^[a-zA-Z0-9]*$");
 
-	    if (username == "")                 ToggleErrorMsg("Username cannot be empty");
-        else if (!regex.IsMatch(username))  ToggleErrorMsg("Username can only consist alpha-numberic characters");
-        else if (username.Length > 10)      ToggleErrorMsg("Username cannot be longer than 10 characters");
-        else                                StartCoroutine(AddScore(username, highscore));
+        if (username == "") ToggleErrorMsg("Username cannot be empty");
+        else if (!regex.IsMatch(username)) ToggleErrorMsg("Username can only consist alpha-numberic characters");
+        else if (username.Length > 10) ToggleErrorMsg("Username cannot be longer than 10 characters");
+        else { HT.AddHighscoreEntry(highscore, username); Menu(); }
 	    
 	}
-
+    
     public void LoadLevel()
     {
         GameManager.Level++;

@@ -12,6 +12,7 @@ public class ScoreManager : MonoBehaviour {
     private int _lowestHigh;
     private bool _scoresRead;
     private bool _isTableFound;
+    private highscoreTable HT;
 
     public class Score
     {
@@ -33,16 +34,21 @@ public class ScoreManager : MonoBehaviour {
 
     List<Score> scoreList = new List<Score>(10);
 
+
+    private void Start()
+    {
+        HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
+}
     void OnLevelWasLoaded(int level)
     {
-        StartCoroutine("ReadScoresFromDB");
+        //StartCoroutine("ReadScoresFromDB");
 
         if (level == 2) StartCoroutine("UpdateGUIText");    // if scores is loaded
         //if (level == 1) _lowestHigh = _highscore = 99999;
         if (level == 1) StartCoroutine("GetHighestScore");  // if game is loaded
     }
 
-    IEnumerator GetHighestScore()
+    /*IEnumerator GetHighestScore()
     {
         Debug.Log("GETTING HIGHEST SCORE");
         // wait until scores are pulled from database
@@ -61,7 +67,12 @@ public class ScoreManager : MonoBehaviour {
 
         _highscore = scoreList[0].score;
         _lowestHigh = scoreList[scoreList.Count - 1].score;
+    }*/
+
+    int GetHighestScore() {
+        return HT.highest();
     }
+
 
     IEnumerator UpdateGUIText()
     {
