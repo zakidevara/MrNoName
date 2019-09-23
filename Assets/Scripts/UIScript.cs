@@ -27,11 +27,9 @@ public class UIScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-        if (GameObject.Find("Game Manager").GetComponent<highscoreTable>().length > 0)
-            high = GameObject.Find("Game Manager").GetComponent<highscoreTable>().highest();
-        else
-            high = 0;
-
+        
+        high = GameObject.Find("Game Manager").GetComponent<highscoreTable>().highest();
+        Debug.Log(high);
         // update score text
         score = GameManager.score;
 		txt_score.text = "Score\n" + score;
