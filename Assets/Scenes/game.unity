@@ -11132,7 +11132,7 @@ PrefabInstance:
     - target: {fileID: 11454750, guid: db15fdab6be0e104fbcf2c44afaad894, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 508745664}
+      objectReference: {fileID: 0}
     - target: {fileID: 11454752, guid: db15fdab6be0e104fbcf2c44afaad894, type: 3}
       propertyPath: target
       value: 
@@ -12509,7 +12509,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300006, guid: da456b8aff7cbc54aa42917543f99591, type: 3}
+  m_Sprite: {fileID: 21300006, guid: c878f75f09e1a034fa2b900c35a2d714, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12529,7 +12529,7 @@ Transform:
   m_GameObject: {fileID: 508745660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.53, y: 10.91, z: 0}
-  m_LocalScale: {x: 0.0011461005, y: 0.0011461005, z: 0.0011461005}
+  m_LocalScale: {x: 0.22890753, y: 0.22890753, z: 0.22890753}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -12584,9 +12584,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 102.13396, y: 20.427046}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 736.1675
+  m_Radius: 3.3938663
 --- !u!1 &509326593
 GameObject:
   m_ObjectHideFlags: 0
@@ -22139,7 +22139,7 @@ PrefabInstance:
     - target: {fileID: 11494802, guid: bc6b2f74c0c842443b5d21543c3e5e16, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 508745664}
+      objectReference: {fileID: 0}
     - target: {fileID: 11494804, guid: bc6b2f74c0c842443b5d21543c3e5e16, type: 3}
       propertyPath: target
       value: 
@@ -47447,6 +47447,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dynamic Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47562,16 +47572,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapY
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_Sprite
@@ -47656,7 +47656,7 @@ PrefabInstance:
     - target: {fileID: 11451032, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 508745664}
+      objectReference: {fileID: 0}
     - target: {fileID: 11451030, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 3}
       propertyPath: target
       value: 
@@ -47832,7 +47832,7 @@ PrefabInstance:
     - target: {fileID: 11454592, guid: 9f090580268dde54d8def18b84c4dbab, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 508745664}
+      objectReference: {fileID: 0}
     - target: {fileID: 11454594, guid: 9f090580268dde54d8def18b84c4dbab, type: 3}
       propertyPath: target
       value: 
