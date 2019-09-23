@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour {
 
-	public int high, score, level;
+	public int high, score;
 
 	public List<Image> lives = new List<Image>(3);
 
@@ -27,14 +27,16 @@ public class UIScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
-        high = GameObject.Find("Game Manager").GetComponent<highscoreTable>().highest();
+        if (GameObject.Find("Game Manager").GetComponent<highscoreTable>().length > 0)
+            high = GameObject.Find("Game Manager").GetComponent<highscoreTable>().highest();
+        else
+            high = 0;
 
         // update score text
         score = GameManager.score;
 		txt_score.text = "Score\n" + score;
 		txt_high.text = "High Score\n" + high;
-	    txt_level.text = "Level\n" + level;
+	    txt_level.text = "Level\n" + (GameManager.Level+1);
 
 	}
 
