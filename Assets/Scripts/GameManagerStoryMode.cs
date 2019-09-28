@@ -15,6 +15,10 @@ public class GameManagerStoryMode : MonoBehaviour {
 	public static GameState gameState;
 
     public GameObject pacman;
+    private GameObject blinky;
+    private GameObject pinky;
+    private GameObject inky;
+    private GameObject clyde;
     private GameGUINavigationStory gui;
 
 	public static bool scared;
