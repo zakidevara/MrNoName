@@ -11,6 +11,16 @@ public class PlayerControllerStoryMode : MonoBehaviour
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
 
+    // Dash Ability variables
+    private Rigidbody2D rb;
+    public float dashCooldown;
+    private float dashCooldownTime;
+    private float dashStart;
+    public float dashSpeed;
+    public float dashDistance;
+    private bool isDashing = false;
+    public ParticleSystem dashEffect;
+
     [Serializable]
     public class PointSprites
     {
@@ -20,6 +30,8 @@ public class PlayerControllerStoryMode : MonoBehaviour
     public PointSprites points;
 
     public static int killstreak = 0;
+
+    
 
     // script handles
     private GameGUINavigationStory GUINav;
@@ -36,6 +48,8 @@ public class PlayerControllerStoryMode : MonoBehaviour
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigationStory>();
         HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
+        rb = GetComponent<Rigidbody2D>();
+        dashCooldownTime = 0;
         _dest = transform.position;
     }
 
@@ -56,6 +70,10 @@ public class PlayerControllerStoryMode : MonoBehaviour
         }
 
 
+    }
+    void Update()
+    {
+        
     }
 
     IEnumerator PlayDeadAnimation()
@@ -88,8 +106,8 @@ public class PlayerControllerStoryMode : MonoBehaviour
         // cast line from 'next to pacman' to pacman
         // not from directly the center of next tile but just a little further from center of next tile
         Vector2 pos = transform.position;
-        direction += new Vector2(direction.x * 0.45f, direction.y * 0.45f);
         RaycastHit2D hit = Physics2D.Linecast(pos + direction, pos);
+        //Debug.Log(hit.distance);
         return hit.collider.name == "pacdot" || (hit.collider == GetComponent<Collider2D>());
     }
 
@@ -105,32 +123,62 @@ public class PlayerControllerStoryMode : MonoBehaviour
         // move closer to destination
         Vector2 p = Vector2.MoveTowards(transform.position, _dest, speed);
         GetComponent<Rigidbody2D>().MovePosition(p);
+        
 
         // get the next direction from keyboard
+              
         if (Input.GetAxis("Horizontal") > 0) _nextDir = Vector2.right;
-        if (Input.GetAxis("Horizontal") < 0) _nextDir = -Vector2.right;
+        if (Input.GetAxis("Horizontal") < 0) _nextDir = Vector2.left;
         if (Input.GetAxis("Vertical") > 0) _nextDir = Vector2.up;
-        if (Input.GetAxis("Vertical") < 0) _nextDir = -Vector2.up;
+        if (Input.GetAxis("Vertical") < 0) _nextDir = Vector2.down;
 
         if (joystick.Horizontal > 0.4) _nextDir = Vector2.right;
-        if (joystick.Horizontal < -0.4) _nextDir = -Vector2.right;
+        if (joystick.Horizontal < -0.4) _nextDir = Vector2.left;
         if (joystick.Vertical > 0.4) _nextDir = Vector2.up;
-        if (joystick.Vertical < -0.4) _nextDir = -Vector2.up;
+        if (joystick.Vertical < -0.4) _nextDir = Vector2.down;
+        if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
+        Debug.Log(dashCooldownTime);
+        if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && Input.GetKeyDown(KeyCode.Z))
+        {
+            _nextDir = _dir;
+            isDashing = true;
+        }
+        //Debug.Log(Time.time - dashStartTime);
 
         // if pacman is in the center of a tile
         if (Vector2.Distance(_dest, transform.position) < 0.00001f)
         {
-            if (Valid(_nextDir))
+            if (isDashing)
             {
-                _dest = (Vector2)transform.position + _nextDir;
-                _dir = _nextDir;
-            }
-            else   // if next direction is not valid
-            {
-                if (Valid(_dir))  // and the prev. direction is valid
-                    _dest = (Vector2)transform.position + _dir;   // continue on that direction
+                /*RaycastHit2D[] theHit = Physics2D.RaycastAll(transform.position + (Vector3)(_nextDir * dashDistance), transform.position);
+                Debug.Log(theHit);
+                foreach (RaycastHit2D i in theHit) {
+                    Debug.Log(i.collider);
+                }*/
+                /*if (theHit != null && theHit.distance >= dashDistance)
+                {
+                    _dest = (Vector2)transform.position + (_nextDir * dashDistance);
+                }
+                else
+                {
+                    _dest = (Vector2)transform.position + (_nextDir * theHit.distance);
+                }*/
 
-                // otherwise, do nothing
+                Dash(_nextDir);
+
+            }
+            else {
+                if (Valid(_nextDir)){
+                    _dest = (Vector2)transform.position + _nextDir;
+                    _dir = _nextDir;
+                    speed = 0.2f;
+                }else{
+                    if (Valid(_dir)) // and the prev. direction is valid
+                    {
+                        _dest = (Vector2)transform.position + _dir;   // continue on that direction
+                        speed = 0.2f;
+                    }
+                }
             }
         }
     }
@@ -153,4 +201,28 @@ public class PlayerControllerStoryMode : MonoBehaviour
         GameManagerStoryMode.score += (int)Mathf.Pow(2, killstreak) * 100;
 
     }
+
+    private void Dash(Vector2 direction)
+    {
+        Debug.Log("Use dash ability!");
+        float actualDistance = 1;
+        for (int i = 1; i <= dashDistance; i++)
+        {
+            actualDistance = (float)i - 1;
+            if (!Valid(direction * i))
+            {
+                break;
+            }
+        }
+        //Instantiate(dashEffect, transform.position, Quaternion.identity);
+        dashEffect.Play();
+        _dest = (Vector2)transform.position + (direction * actualDistance);
+        speed = dashSpeed;
+        dashStart = Time.time;
+        dashCooldownTime = dashCooldown;
+        isDashing = false;
+    }
+
+   
+    
 }
