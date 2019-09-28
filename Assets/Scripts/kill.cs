@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class kill : MonoBehaviour
 {
-    private GameManager _gm;
+    private GameManagerStoryMode _gm;
     // Start is called before the first frame update
     void Start()
     {
-        _gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        _gm = GameObject.Find("Game Manager").GetComponent<GameManagerStoryMode>();
     }
 
     
     void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.name == "pacman")
+		if(other.name == "pacman" || other.name == "nosis")
 		{
 		    _gm.LoseLife();
 		}
