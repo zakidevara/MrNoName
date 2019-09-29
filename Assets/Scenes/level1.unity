@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3896,7 +3896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212682929}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.46, y: -4.34, z: -7.5923104}
+  m_LocalPosition: {x: 17.48, y: -4.32, z: -7.5923104}
   m_LocalScale: {x: 0.91877997, y: 1.7644099, z: 0.31695998}
   m_Children:
   - {fileID: 1829402945}
@@ -12036,7 +12036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870035020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.46, y: -4.37, z: -7.5923104}
+  m_LocalPosition: {x: 23.49, y: -4.29, z: -7.5923104}
   m_LocalScale: {x: 0.91877997, y: 1.7644099, z: 0.31695998}
   m_Children:
   - {fileID: 1960879353}
@@ -13861,6 +13861,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.31695625
       objectReference: {fileID: 0}
+    - target: {fileID: 3889868288580934299, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.02
+      objectReference: {fileID: 0}
     - target: {fileID: 3889868289040304274, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
         type: 3}
       propertyPath: m_Sprite
@@ -13911,11 +13916,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 0.17420146
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889868288580934299, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfeefd95eee9eb4da22d91fc78e7679, type: 3}
@@ -14001,6 +14001,11 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1281830353}
+    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1281830353}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -14011,10 +14016,5 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.107052796
       objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1281830353}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab457b46b59720a4bb143196f7a8c576, type: 3}
