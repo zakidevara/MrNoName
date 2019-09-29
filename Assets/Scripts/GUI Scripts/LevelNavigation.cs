@@ -20,7 +20,7 @@ public class LevelNavigation : MonoBehaviour
     }
     public void level4()
     {
-        Application.LoadLevel("level5");
+        Application.LoadLevel("level4");
 
     }
     public void level5()
