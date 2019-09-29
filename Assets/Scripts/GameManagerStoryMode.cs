@@ -14,7 +14,7 @@ public class GameManagerStoryMode : MonoBehaviour {
 	public enum GameState { Init, Game, Dead, Scores }
 	public static GameState gameState;
 
-    private GameObject pacman;
+    public GameObject pacman;
     private GameObject blinky;
     private GameObject pinky;
     private GameObject inky;
@@ -76,16 +76,16 @@ public class GameManagerStoryMode : MonoBehaviour {
         if (Level == 0) lives = 3;
 
         Debug.Log("Level " + Level + " Loaded!");
-        AssignGhosts();
+        //AssignGhosts();
         ResetVariables();
 
 
         // Adjust Ghost variables!
-        clyde.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
-        blinky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
-        pinky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
-        inky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
-        pacman.GetComponent<PlayerController>().speed += Level*SpeedPerLevel/2;
+        //clyde.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
+        //blinky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
+        //pinky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
+        //inky.GetComponent<GhostMove>().speed += Level * SpeedPerLevel;
+        //pacman.GetComponent<PlayerController>().speed += Level*SpeedPerLevel/2;
     }
 
     private void ResetVariables()
@@ -155,11 +155,12 @@ public class GameManagerStoryMode : MonoBehaviour {
     void AssignGhosts()
     {
         // find and assign ghosts
-        clyde = GameObject.Find("clyde");
-        pinky = GameObject.Find("pinky");
-        inky = GameObject.Find("inky");
-        blinky = GameObject.Find("blinky");
-        pacman = GameObject.Find("pacman");
+        //clyde = GameObject.Find("clyde");
+        //pinky = GameObject.Find("pinky");
+        //inky = GameObject.Find("inky");
+        //blinky = GameObject.Find("blinky");
+        //pacman = GameObject.Find("pacman");
+        //pacman = GameObject.Find("nosis");
 
         if (clyde == null || pinky == null || inky == null || blinky == null) Debug.Log("One of ghosts are NULL");
         if (pacman == null) Debug.Log("Pacman is NULL");

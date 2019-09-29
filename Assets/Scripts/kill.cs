@@ -15,7 +15,7 @@ public class kill : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.name == "pacman")
+		if(other.name == "pacman" || other.name == "nosis")
 		{
 		    _gm.LoseLife();
 		}
