@@ -4889,6 +4889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnX: -0.5
   respawnY: 0.5
+  pacman: {fileID: 592025364}
   scareLength: 7
   SpeedPerLevel: 0.025
 --- !u!1 &363513118
@@ -5776,6 +5777,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &592025364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6944842659125445600, guid: ab457b46b59720a4bb143196f7a8c576,
+    type: 3}
+  m_PrefabInstance: {fileID: 5921925122684029872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &653889810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8851,7 +8858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1237135949
 MonoBehaviour:
@@ -8865,7 +8872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f71d33feca06e74d935e2dc7c6df8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1926156208}
+  player: {fileID: 592025364}
 --- !u!114 &1281830353 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
@@ -11290,7 +11297,7 @@ Transform:
   m_Children:
   - {fileID: 112918863}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1795464092
 GameObject:
@@ -12317,12 +12324,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1926156208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5921925120850772992, guid: ab457b46b59720a4bb143196f7a8c576,
-    type: 3}
-  m_PrefabInstance: {fileID: 5921925122684029872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1931731846
 GameObject:
   m_ObjectHideFlags: 0
@@ -13258,7 +13259,7 @@ Transform:
   - {fileID: 671912419}
   - {fileID: 201273335}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1973052249
 MonoBehaviour:
@@ -13274,7 +13275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   high: 0
   score: 0
-  level: 0
   lives:
   - {fileID: 2081272290}
   - {fileID: 1685361844}
@@ -13997,6 +13997,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610684663800514669, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1281830353}
+    - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.461
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.107052796
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: joystick
       value: 
