@@ -155,8 +155,8 @@ MonoBehaviour:
   joystick: {fileID: 0}
   speed: 0.2
   dashCooldown: 7
-  dashSpeed: 20
-  dashDistance: 5
+  dashSpeed: 1
+  dashDistance: 10
   dashEffect: {fileID: 1488585512708760325}
   points:
     pointSprites: []
