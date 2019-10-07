@@ -76,7 +76,7 @@ public class GameManagerStoryMode : MonoBehaviour {
         if (Level == 0) lives = 3;
 
         Debug.Log("Level " + Level + " Loaded!");
-        //AssignGhosts();
+        AssignGhosts();
         ResetVariables();
 
 
@@ -106,8 +106,9 @@ public class GameManagerStoryMode : MonoBehaviour {
 	public void ResetScene()
 	{
         //CalmGhosts();
-
-		pacman.transform.position = new Vector3(respawnX, respawnY, 0f);
+        enableEnemyMovements();
+        enableTrapMovements();
+        pacman.transform.position = new Vector3(respawnX, respawnY, 0f);
 		/*blinky.transform.position = new Vector3(15f, 20f, 0f);
 		pinky.transform.position = new Vector3(14.5f, 17f, 0f);
 		inky.transform.position = new Vector3(16.5f, 17f, 0f);
@@ -151,7 +152,40 @@ public class GameManagerStoryMode : MonoBehaviour {
 		clyde.GetComponent<GhostMove>().Calm();
 	    PlayerController.killstreak = 0;
     }
-
+    
+    public void disableEnemyMovements() {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach(GameObject e in enemies)
+        {
+            e.GetComponent<Patrol>().enabled = false;
+            e.GetComponent<BabyBroMove>().enabled = false;
+        }
+    }
+    public void disableTrapMovements()
+    {
+        GameObject[] traps = GameObject.FindGameObjectsWithTag("Trap");
+        foreach (GameObject e in traps)
+        {
+            e.GetComponent<trapmovement>().enabled = false;
+        }
+    }
+    public void enableEnemyMovements()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject e in enemies)
+        {
+            e.GetComponent<Patrol>().enabled = true;
+            e.GetComponent<BabyBroMove>().enabled = true;
+        }
+    }
+    public void enableTrapMovements()
+    {
+        GameObject[] traps = GameObject.FindGameObjectsWithTag("Trap");
+        foreach (GameObject e in traps)
+        {
+            e.GetComponent<trapmovement>().enabled = true;
+        }
+    }
     void AssignGhosts()
     {
         // find and assign ghosts
@@ -159,11 +193,12 @@ public class GameManagerStoryMode : MonoBehaviour {
         //pinky = GameObject.Find("pinky");
         //inky = GameObject.Find("inky");
         //blinky = GameObject.Find("blinky");
-        //pacman = GameObject.Find("pacman");
-        //pacman = GameObject.Find("nosis");
+        pacman = GameObject.Find("pacman");
+        if (pacman == null) {
+            pacman = GameObject.Find("nosis");
+        }
 
-        if (clyde == null || pinky == null || inky == null || blinky == null) Debug.Log("One of ghosts are NULL");
-        if (pacman == null) Debug.Log("Pacman is NULL");
+        
 
         gui = GameObject.FindObjectOfType<GameGUINavigationStory>();
 

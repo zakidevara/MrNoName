@@ -140,9 +140,10 @@ GameObject:
   - component: {fileID: 3889868289040304273}
   - component: {fileID: 3889868289040304270}
   - component: {fileID: 1119700566597167432}
+  - component: {fileID: 6604324219503995063}
   m_Layer: 0
   m_Name: Baby-Bro
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,3 +324,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e779d083dae2f4490e11614e63cdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6604324219503995063
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3889868289040304277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1782582, y: -0.039689705}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.49, y: 0.44}
+    newSize: {x: 0.49, y: 0.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1382918, y: 0.30284938}
+  m_EdgeRadius: 0

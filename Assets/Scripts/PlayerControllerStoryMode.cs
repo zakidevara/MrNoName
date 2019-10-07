@@ -59,13 +59,18 @@ public class PlayerControllerStoryMode : MonoBehaviour
         switch (GameManagerStoryMode.gameState)
         {
             case GameManagerStoryMode.GameState.Game:
+                
                 ReadInputAndMove();
                 Animate();
                 break;
 
             case GameManagerStoryMode.GameState.Dead:
+                
                 if (!_deadPlaying)
+                {
                     StartCoroutine("PlayDeadAnimation");
+                }
+                
                 break;
         }
 
@@ -75,15 +80,19 @@ public class PlayerControllerStoryMode : MonoBehaviour
     {
         
     }
-
+  
     IEnumerator PlayDeadAnimation()
     {
+        
         _deadPlaying = true;
         GetComponent<Animator>().SetBool("Die", true);
+        GM.disableEnemyMovements();
+        GM.disableTrapMovements();
         yield return new WaitForSeconds(1);
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
 
+        
         if (GameManagerStoryMode.lives <= 0)
         {
             
@@ -137,7 +146,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
         if (joystick.Vertical > 0.4) _nextDir = Vector2.up;
         if (joystick.Vertical < -0.4) _nextDir = Vector2.down;
         if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
-        Debug.Log(dashCooldownTime);
+        //Debug.Log(dashCooldownTime);
         if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && Input.GetKeyDown(KeyCode.Z))
         {
             _nextDir = _dir;
