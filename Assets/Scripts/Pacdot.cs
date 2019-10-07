@@ -10,7 +10,7 @@ public class Pacdot : MonoBehaviour {
 			GameManager.score += 10;
 		    GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
             Destroy(gameObject);
-
+            Debug.Log(GameManager.score);
 		    if (pacdots.Length == 1)
 		    {
 		        GameObject.FindObjectOfType<GameGUINavigation>().LoadLevel();

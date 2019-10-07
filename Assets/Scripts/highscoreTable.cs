@@ -9,7 +9,7 @@ public class highscoreTable : MonoBehaviour
     private Transform entryTemplate;
     private List<HighscoreEntry> highscoreEntryList;
     private List<Transform> highscoreEntryTransformList;
-    
+    public int length;
 
     private void Awake()
     {
@@ -18,9 +18,19 @@ public class highscoreTable : MonoBehaviour
         entryTemplate.gameObject.SetActive(false);
 
         // AddHighscoreEntry(2322, "Zaki");
+        if (!PlayerPrefs.HasKey("highscoreTable")) {
+            highscoreEntryList = new List<HighscoreEntry>() {
+                new HighscoreEntry{ score = 0, name = "default" },
+            };
+            Highscores hs = new Highscores { highscoreEntryList = highscoreEntryList  };
+            string json = JsonUtility.ToJson(hs);
+            PlayerPrefs.SetString("highscoreTable", json);
+            PlayerPrefs.Save();
+        }
         string jsonString  = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
+        length = highscores.highscoreEntryList.Count;
         // Bubble Sort Score List
         int swapCount = 1;
         while (swapCount > 0) {
@@ -75,8 +85,21 @@ public class highscoreTable : MonoBehaviour
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
 
         //Load saved highscores
+        if (!PlayerPrefs.HasKey("highscoreTable"))
+        {
+            highscoreEntryList = new List<HighscoreEntry>() {
+                new HighscoreEntry{ score = 0, name = "default" },
+            };
+            Highscores hs = new Highscores { highscoreEntryList = highscoreEntryList };
+            string jsonStr = JsonUtility.ToJson(hs);
+            PlayerPrefs.SetString("highscoreTable", jsonStr);
+            PlayerPrefs.Save();
+        }
+
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+
+        
 
         // Add new entry to Highscores
         highscores.highscoreEntryList.Add(highscoreEntry);
