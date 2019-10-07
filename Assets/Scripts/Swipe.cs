@@ -32,7 +32,7 @@ public class Swipe : MonoBehaviour
             if (Input.touches[0].phase == TouchPhase.Began) {
                 tap = true;
                 startTouch = Input.touches[0].position;
-            } else if(Input.touches[0].phase == TouchPhase.Ended || Input.touches[0]. == TouchPhase.Canceled){
+            } else if(Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled){
                 Reset();
             }
         }
