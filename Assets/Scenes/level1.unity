@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12606,16 +12606,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapY
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12734,6 +12724,16 @@ PrefabInstance:
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapY
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
@@ -13829,26 +13829,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3889868289040304275, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.289
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889868289040304275, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.9180244
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889868289040304275, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0377169
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889868289040304275, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.31695625
-      objectReference: {fileID: 0}
     - target: {fileID: 3889868288580934299, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13858,7 +13838,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300002, guid: c88517a5fdfba0d46ad52a2f28d51957,
+      objectReference: {fileID: 21300000, guid: 486f205984607e94fa114143a46477ca,
         type: 3}
     - target: {fileID: 3889868289040304274, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
         type: 3}
@@ -13888,7 +13868,7 @@ PrefabInstance:
     - target: {fileID: 3889868289040304273, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.44
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 3889868289040304273, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
         type: 3}
@@ -13904,6 +13884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 0.17420146
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604324219503995063, guid: 2dfeefd95eee9eb4da22d91fc78e7679,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.36
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfeefd95eee9eb4da22d91fc78e7679, type: 3}
