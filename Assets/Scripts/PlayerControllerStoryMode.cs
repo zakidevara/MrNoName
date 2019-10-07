@@ -6,6 +6,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
 {
 
     public Joystick joystick;
+    public Joystick button;
     public float speed = 0.2f;
     Vector2 _dest = Vector2.zero;
     Vector2 _dir = Vector2.zero;
@@ -147,7 +148,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
         if (joystick.Vertical < -0.4) _nextDir = Vector2.down;
         if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
         //Debug.Log(dashCooldownTime);
-        if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && Input.GetKeyDown(KeyCode.Z))
+        if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && (Input.GetKeyDown(KeyCode.Z)||button.Horizontal!=0))
         {
             _nextDir = _dir;
             isDashing = true;
