@@ -6252,7 +6252,7 @@ PrefabInstance:
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Offset.x
-      value: 1.1162608
+      value: 0.6944167
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
@@ -6262,7 +6262,7 @@ PrefabInstance:
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Radius
-      value: 2.9683852
+      value: 3.6747513
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
@@ -47413,6 +47413,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dynamic Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47527,16 +47537,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapY
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
