@@ -137,9 +137,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0739988, y: 0.34573254}
+  m_Offset: {x: 0.51423573, y: 0.34573254}
   serializedVersion: 2
-  m_Radius: 3.6754348
+  m_Radius: 4.2351975
 --- !u!114 &6944842659125445614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +169,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+  button: {fileID: 0}
   speed: 0.2
+  dashCooldown: 0
+  dashSpeed: 0
+  dashDistance: 0
+  dashEffect: {fileID: 0}
   points:
     pointSprites: []

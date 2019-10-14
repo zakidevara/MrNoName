@@ -157,8 +157,12 @@ public class GameManagerStoryMode : MonoBehaviour {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach(GameObject e in enemies)
         {
-            e.GetComponent<Patrol>().enabled = false;
-            e.GetComponent<BabyBroMove>().enabled = false;
+            if(e.GetComponent<Patrol>() != null)
+                e.GetComponent<Patrol>().enabled = false;
+            if(e.GetComponent<BabyBroMove>() != null)
+                e.GetComponent<BabyBroMove>().enabled = false;
+            if(e.GetComponent<patrolBigBro>() != null)
+                e.GetComponent<patrolBigBro>().enabled = false;
         }
     }
     public void disableTrapMovements()
@@ -174,8 +178,12 @@ public class GameManagerStoryMode : MonoBehaviour {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject e in enemies)
         {
-            e.GetComponent<Patrol>().enabled = true;
-            e.GetComponent<BabyBroMove>().enabled = true;
+            if (e.GetComponent<Patrol>() != null)
+                e.GetComponent<Patrol>().enabled = true;
+            if (e.GetComponent<BabyBroMove>() != null)
+                e.GetComponent<BabyBroMove>().enabled = true;
+            if (e.GetComponent<patrolBigBro>() != null)
+                e.GetComponent<patrolBigBro>().enabled = true;
         }
     }
     public void enableTrapMovements()
