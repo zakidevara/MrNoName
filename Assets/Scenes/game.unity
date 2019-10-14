@@ -6182,12 +6182,12 @@ PrefabInstance:
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.99
+      value: 13.961
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11
+      value: 11.01
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
@@ -6237,32 +6237,32 @@ PrefabInstance:
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.19464295
+      value: 0.16731946
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2094055
+      value: 0.18799707
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3871243
+      value: 0.36637563
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.6944167
+      value: 0.035610083
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.22789128
+      value: -0.04368909
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Radius
-      value: 3.6747513
+      value: 3.7875526
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
@@ -41132,7 +41132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826860441
 RectTransform:
   m_ObjectHideFlags: 0
