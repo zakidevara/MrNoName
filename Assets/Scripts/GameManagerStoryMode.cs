@@ -170,7 +170,8 @@ public class GameManagerStoryMode : MonoBehaviour {
         GameObject[] traps = GameObject.FindGameObjectsWithTag("Trap");
         foreach (GameObject e in traps)
         {
-            e.GetComponent<trapmovement>().enabled = false;
+            if(e.GetComponent<trapmovement>() != null)
+                e.GetComponent<trapmovement>().enabled = false;
         }
     }
     public void enableEnemyMovements()
@@ -191,7 +192,8 @@ public class GameManagerStoryMode : MonoBehaviour {
         GameObject[] traps = GameObject.FindGameObjectsWithTag("Trap");
         foreach (GameObject e in traps)
         {
-            e.GetComponent<trapmovement>().enabled = true;
+            if(e.GetComponent<trapmovement>() != null)
+                e.GetComponent<trapmovement>().enabled = true;
         }
     }
     void AssignGhosts()

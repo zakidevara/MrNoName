@@ -24,6 +24,7 @@ public class GameGUINavigationStory : MonoBehaviour
     public Canvas ScoreCanvas;
     public Canvas ErrorCanvas;
     public Canvas GameOverCanvas;
+    public Canvas VictoryCanvas;
 
     // buttons
     public Button MenuButton;

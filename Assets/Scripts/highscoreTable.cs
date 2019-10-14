@@ -145,6 +145,10 @@ public class highscoreTable : MonoBehaviour
 
     public int highest()
     {
+        if (!PlayerPrefs.HasKey("highscoreTable"))
+        {
+            return 0;
+        }
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
@@ -167,14 +171,10 @@ public class highscoreTable : MonoBehaviour
 
         }
 
-        if (highscores.highscoreEntryList.Count < 1)
-        {
-            return 0;
-        }
-        else
-        {
-            return highscores.highscoreEntryList[0].score;
-        }
+        
+        
+        return highscores.highscoreEntryList[0].score;
+        
     }
 
 

@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 320344386}
   - component: {fileID: 320344387}
   m_Layer: 0
-  m_Name: Inky
+  m_Name: Suster Ngesot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1864,7 +1864,7 @@ GameObject:
   - component: {fileID: 1351348750}
   - component: {fileID: 1351348751}
   m_Layer: 0
-  m_Name: Pinky
+  m_Name: Kunti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2607,7 +2607,7 @@ GameObject:
   - component: {fileID: 1817581380}
   - component: {fileID: 1817581381}
   m_Layer: 0
-  m_Name: Blinky
+  m_Name: Pocong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
