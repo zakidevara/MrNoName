@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerControllerStoryMode : MonoBehaviour
 {
@@ -32,7 +33,9 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
     public static int killstreak = 0;
 
-    
+    //sound
+    public AudioSource buttonEffect;
+    public GameObject dashSound;
 
     // script handles
     private GameGUINavigationStory GUINav;
@@ -49,6 +52,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigationStory>();
         HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
+        buttonEffect = GameObject.Find("movementSound").GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         dashCooldownTime = 0;
         _dest = transform.position;
@@ -137,15 +141,47 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
         // get the next direction from keyboard
               
-        if (Input.GetAxis("Horizontal") > 0) _nextDir = Vector2.right;
-        if (Input.GetAxis("Horizontal") < 0) _nextDir = Vector2.left;
-        if (Input.GetAxis("Vertical") > 0) _nextDir = Vector2.up;
-        if (Input.GetAxis("Vertical") < 0) _nextDir = Vector2.down;
+        if (Input.GetAxis("Horizontal") > 0){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.right;
+        } 
+        if (Input.GetAxis("Horizontal") < 0){ 
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.left; 
+        }
+        if (Input.GetAxis("Vertical") > 0){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.up;
+        } 
+        if (Input.GetAxis("Vertical") < 0){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.down;
+        } 
 
-        if (joystick.Horizontal > 0.4) _nextDir = Vector2.right;
-        if (joystick.Horizontal < -0.4) _nextDir = Vector2.left;
-        if (joystick.Vertical > 0.4) _nextDir = Vector2.up;
-        if (joystick.Vertical < -0.4) _nextDir = Vector2.down;
+        if (joystick.Horizontal > 0.4){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.right;
+        } 
+        if (joystick.Horizontal < -0.4){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.left;
+        } 
+        if (joystick.Vertical > 0.4){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.up;
+        } 
+        if (joystick.Vertical < -0.4){
+            muteButtonEffect();
+            playButtonEffect();
+            _nextDir = Vector2.down;
+        } 
         if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
         //Debug.Log(dashCooldownTime);
         if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && (Input.GetKeyDown(KeyCode.Z)||button.Horizontal!=0))
@@ -232,7 +268,16 @@ public class PlayerControllerStoryMode : MonoBehaviour
         dashCooldownTime = dashCooldown;
         isDashing = false;
     }
-
-   
+    
+    
+    public void playButtonEffect(){
+        buttonEffect.Play();
+    }
+    public void playDashEffect(){
+        dashEffect.Play();
+    }
+    public void muteButtonEffect(){
+        buttonEffect.Stop();
+    }
     
 }
