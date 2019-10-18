@@ -13138,7 +13138,7 @@ PrefabInstance:
     - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: deadZone
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
