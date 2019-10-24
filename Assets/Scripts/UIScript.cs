@@ -29,7 +29,7 @@ public class UIScript : MonoBehaviour {
 	{
         
         high = GameObject.Find("Game Manager").GetComponent<highscoreTable>().highest();
-        Debug.Log(high);
+
         // update score text
         score = GameManager.score;
 		txt_score.text = "Score\n" + score;
