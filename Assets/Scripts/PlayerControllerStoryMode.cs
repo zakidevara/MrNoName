@@ -142,10 +142,10 @@ public class PlayerControllerStoryMode : MonoBehaviour
         if (Input.GetAxis("Vertical") > 0) _nextDir = Vector2.up;
         if (Input.GetAxis("Vertical") < 0) _nextDir = Vector2.down;
 
-        if (joystick.Horizontal > 0.4) _nextDir = Vector2.right;
-        if (joystick.Horizontal < -0.4) _nextDir = Vector2.left;
-        if (joystick.Vertical > 0.4) _nextDir = Vector2.up;
-        if (joystick.Vertical < -0.4) _nextDir = Vector2.down;
+        if (joystick.Horizontal > 0) _nextDir = Vector2.right;
+        if (joystick.Horizontal < 0) _nextDir = Vector2.left;
+        if (joystick.Vertical > 0) _nextDir = Vector2.up;
+        if (joystick.Vertical < 0) _nextDir = Vector2.down;
         if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
         //Debug.Log(dashCooldownTime);
         if (this.name.Equals("nosis") && (dashCooldownTime <= 0) && (Input.GetKeyDown(KeyCode.Z)||button.Horizontal!=0))
