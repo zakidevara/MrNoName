@@ -1293,7 +1293,7 @@ PrefabInstance:
     - target: {fileID: 2370014025414674726, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2370014026038869262, guid: de36342033746724494a968231ee0624,
         type: 3}
@@ -4917,7 +4917,7 @@ PrefabInstance:
     - target: {fileID: 2370014025414674726, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2370014026038869262, guid: de36342033746724494a968231ee0624,
         type: 3}
@@ -6156,7 +6156,7 @@ PrefabInstance:
     - target: {fileID: 2370014025414674726, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2370014026038869262, guid: de36342033746724494a968231ee0624,
         type: 3}
@@ -13394,7 +13394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1534551807
 Transform:
   m_ObjectHideFlags: 0
@@ -16616,6 +16616,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: snapY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16736,16 +16746,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: snapY
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_Sprite
@@ -16859,7 +16859,7 @@ PrefabInstance:
     - target: {fileID: 2370014025414674726, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: speed
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2370014026038869262, guid: de36342033746724494a968231ee0624,
         type: 3}
