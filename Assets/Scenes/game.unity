@@ -6181,6 +6181,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: pacman
       objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 453008177}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: speed
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: joystick
@@ -6275,21 +6290,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 3.5932724
-      objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 453008177}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: speed
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576, type: 3}
@@ -47759,7 +47759,7 @@ PrefabInstance:
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159578, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
@@ -47775,7 +47775,12 @@ PrefabInstance:
     - target: {fileID: 8135886327784587630, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738820, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56fae09712773584fb63896d473a98ee, type: 3}
