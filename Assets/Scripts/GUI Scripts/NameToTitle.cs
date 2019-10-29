@@ -37,7 +37,7 @@ public class NameToTitle : MonoBehaviour {
 
 	void OnMouseExit()
 	{
-		title.text = "Mr. NoName";
+		title.text = "Brorun";
 		title.color = Color.white;
 	}
 }
