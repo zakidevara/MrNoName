@@ -9,6 +9,7 @@ TagManager:
   - ScoresText
   - Trap
   - Enemy
+  - LevelButton
   layers:
   - Default
   - TransparentFX

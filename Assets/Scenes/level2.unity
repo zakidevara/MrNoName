@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleQuit
         m_Mode: 1
         m_Arguments:
@@ -3147,7 +3147,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: SubmitScores
         m_Mode: 1
         m_Arguments:
@@ -3515,6 +3515,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f9707eb264df0642920732a3173ddb8, type: 3}
+--- !u!1 &454548745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1654163955807226672, guid: 2f9707eb264df0642920732a3173ddb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 454548744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &454548746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454548745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d7c8454a738e0d4686531ea81744f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &459282778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4366,7 +4384,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
@@ -5722,7 +5740,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -7586,7 +7604,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939266473}
-  - component: {fileID: 939266472}
   - component: {fileID: 939266474}
   m_Layer: 0
   m_Name: UI Manager
@@ -7595,27 +7612,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &939266472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939266471}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50657a48ab4cd5d4cab5acf55d0665df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialDelay: 1
-  PauseCanvas: {fileID: 1403547056}
-  QuitCanvas: {fileID: 79004843}
-  ReadyCanvas: {fileID: 737924477}
-  ScoreCanvas: {fileID: 510133266}
-  ErrorCanvas: {fileID: 1557083313}
-  GameOverCanvas: {fileID: 1899690195}
-  MenuButton: {fileID: 1123314309}
-  HT: {fileID: 0}
 --- !u!4 &939266473
 Transform:
   m_ObjectHideFlags: 0
@@ -7651,7 +7647,6 @@ MonoBehaviour:
   GameOverCanvas: {fileID: 1899690195}
   VictoryCanvas: {fileID: 0}
   MenuButton: {fileID: 1123314309}
-  HT: {fileID: 0}
 --- !u!1 &946300911
 GameObject:
   m_ObjectHideFlags: 0
@@ -8028,7 +8023,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -8437,7 +8432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
@@ -8784,7 +8779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
@@ -12329,7 +12324,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleQuit
         m_Mode: 1
         m_Arguments:
@@ -13030,6 +13025,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallBro (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.023
+      objectReference: {fileID: 0}
+    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.901
+      objectReference: {fileID: 0}
+    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.078247
+      objectReference: {fileID: 0}
+    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7154301
+      objectReference: {fileID: 0}
     - target: {fileID: 435195799121340112, guid: 4ff1191017793b340af73c439d04cd19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13084,26 +13099,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.023
-      objectReference: {fileID: 0}
-    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.901
-      objectReference: {fileID: 0}
-    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.078247
-      objectReference: {fileID: 0}
-    - target: {fileID: 435195799682374626, guid: 4ff1191017793b340af73c439d04cd19,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7154301
       objectReference: {fileID: 0}
     - target: {fileID: 435195799682374654, guid: 4ff1191017793b340af73c439d04cd19,
         type: 3}
@@ -13258,11 +13253,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419874110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcfa2a22fbee75946b6a627f98aa4deb, type: 3}
+  m_Script: {fileID: 11500000, guid: 209176bf34bd5d74d844687ca46a9650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  high: 0
-  score: 0
   lives:
   - {fileID: 1540421055}
   - {fileID: 1719195383}
@@ -15870,7 +15863,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939266472}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleErrorMsg
         m_Mode: 5
         m_Arguments:
@@ -16049,11 +16042,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1977446852}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -16064,6 +16052,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.44
       objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1977446852}
     - target: {fileID: 5921925120850772992, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Name

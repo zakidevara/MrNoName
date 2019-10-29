@@ -222,7 +222,7 @@ public class GameManagerStoryMode : MonoBehaviour {
         gameState = GameState.Dead;
     
         // update UI too
-        UIScript ui = GameObject.FindObjectOfType<UIScript>();
+        UIScriptStoryMode ui = GameObject.FindObjectOfType<UIScriptStoryMode>();
         Destroy(ui.lives[ui.lives.Count - 1]);
         ui.lives.RemoveAt(ui.lives.Count - 1);
     }

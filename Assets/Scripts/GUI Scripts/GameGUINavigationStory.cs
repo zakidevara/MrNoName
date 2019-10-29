@@ -29,9 +29,7 @@ public class GameGUINavigationStory : MonoBehaviour
     // buttons
     public Button MenuButton;
 
-
-    //Highscore Table
-    public highscoreTable HT;
+    
 
     //------------------------------------------------------------------
     // Function Definitions
@@ -39,7 +37,6 @@ public class GameGUINavigationStory : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        HT = GameObject.Find("Game Manager").GetComponent<highscoreTable>();
         StartCoroutine("ShowReadyScreen", initialDelay);
     }
 
@@ -87,7 +84,7 @@ public class GameGUINavigationStory : MonoBehaviour
 
     IEnumerator ShowGameOverScreen()
     {
-        Debug.Log("Showing GAME OVER Screen");
+
         GameOverCanvas.enabled = true;
         yield return new WaitForSeconds(2);
         Menu();
@@ -208,19 +205,7 @@ public class GameGUINavigationStory : MonoBehaviour
     }
 
 
-    public void SubmitScores()
-    {
-
-        int highscore = GameManagerStoryMode.score;
-        string username = ScoreCanvas.GetComponentInChildren<InputField>().GetComponentsInChildren<Text>()[1].text;
-        Regex regex = new Regex("^[a-zA-Z0-9]*$");
-
-        if (username == "") ToggleErrorMsg("Username cannot be empty");
-        else if (!regex.IsMatch(username)) ToggleErrorMsg("Username can only consist alpha-numberic characters");
-        else if (username.Length > 10) ToggleErrorMsg("Username cannot be longer than 10 characters");
-        else { HT.AddHighscoreEntry(highscore, username); Menu(); }
-
-    }
+ 
 
     public void LoadLevel()
     {

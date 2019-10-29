@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class nextLevel : MonoBehaviour
 {
+    private static int MAX_LEVEL = 3;
     private int nextSceneToLoad;
     private GameManagerStoryMode _gm;
     // Start is called before the first frame update
     void Start()
     {
-       nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1 ; 
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1 ;
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)

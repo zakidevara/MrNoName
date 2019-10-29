@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: SubmitScores
         m_Mode: 1
         m_Arguments:
@@ -2831,7 +2831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -3388,6 +3388,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 49.51
       objectReference: {fileID: 0}
+    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     - target: {fileID: 2370014026563653262, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: m_Size.x
@@ -3398,11 +3403,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de36342033746724494a968231ee0624, type: 3}
 --- !u!1 &266059768
@@ -7024,6 +7024,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 37.51
       objectReference: {fileID: 0}
+    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     - target: {fileID: 2370014026563653262, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: m_Size.x
@@ -7034,11 +7039,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de36342033746724494a968231ee0624, type: 3}
 --- !u!1 &450532971
@@ -15381,6 +15381,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 33.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     - target: {fileID: 2370014026563653262, guid: de36342033746724494a968231ee0624,
         type: 3}
       propertyPath: m_Size.x
@@ -15391,11 +15396,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 2370014025414674727, guid: de36342033746724494a968231ee0624,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 583cc1941645b974b8a31dfd04f10000, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de36342033746724494a968231ee0624, type: 3}
 --- !u!1 &579047963
@@ -18454,7 +18454,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleErrorMsg
         m_Mode: 5
         m_Arguments:
@@ -19401,7 +19401,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: SubmitScores
         m_Mode: 1
         m_Arguments:
@@ -20534,7 +20534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleQuit
         m_Mode: 1
         m_Arguments:
@@ -22011,7 +22011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
@@ -24615,7 +24615,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -24810,11 +24810,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219239706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcfa2a22fbee75946b6a627f98aa4deb, type: 3}
+  m_Script: {fileID: 11500000, guid: 209176bf34bd5d74d844687ca46a9650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  high: 0
-  score: 0
   lives:
   - {fileID: 110840918}
   - {fileID: 2145006794}
@@ -25685,7 +25683,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
@@ -26689,7 +26687,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1378394412}
   - component: {fileID: 1378394411}
-  - component: {fileID: 1378394410}
   - component: {fileID: 1378394409}
   - component: {fileID: 1378394413}
   m_Layer: 0
@@ -26711,20 +26708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd69a22ec29cb54cbe9c5de8484d59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1378394410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378394408}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a69aa6a4121ee1429846b7e049dc8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scareLength: 7
-  SpeedPerLevel: 0.025
 --- !u!114 &1378394411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27752,7 +27735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -29370,7 +29353,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: ToggleQuit
         m_Mode: 1
         m_Arguments:
@@ -33076,7 +33059,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1927233493}
-  - component: {fileID: 1927233492}
   - component: {fileID: 1927233494}
   m_Layer: 0
   m_Name: UI Manager
@@ -33085,27 +33067,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1927233492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927233491}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50657a48ab4cd5d4cab5acf55d0665df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialDelay: 1
-  PauseCanvas: {fileID: 1807330417}
-  QuitCanvas: {fileID: 1362743402}
-  ReadyCanvas: {fileID: 1497796549}
-  ScoreCanvas: {fileID: 878700373}
-  ErrorCanvas: {fileID: 1480148888}
-  GameOverCanvas: {fileID: 1970794392}
-  MenuButton: {fileID: 1938206185}
-  HT: {fileID: 0}
 --- !u!4 &1927233493
 Transform:
   m_ObjectHideFlags: 0
@@ -33141,7 +33102,6 @@ MonoBehaviour:
   GameOverCanvas: {fileID: 1970794392}
   VictoryCanvas: {fileID: 0}
   MenuButton: {fileID: 1938206185}
-  HT: {fileID: 0}
 --- !u!1 &1931194703
 GameObject:
   m_ObjectHideFlags: 0
@@ -33323,7 +33283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1927233492}
+      - m_Target: {fileID: 0}
         m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
