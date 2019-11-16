@@ -14,8 +14,11 @@ public class Level2Unlocker : MonoBehaviour
                 PlayerPrefs.SetInt("LevelsUnlocked", 1);
                 PlayerPrefs.Save();
             }
-            PlayerPrefs.SetInt("LevelsUnlocked", 2);
-            PlayerPrefs.Save();
+
+            
+                PlayerPrefs.SetInt("LevelsUnlocked", 2);
+                PlayerPrefs.Save();
+            
         }
     }
 

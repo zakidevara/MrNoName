@@ -14,8 +14,10 @@ public class Level3Unlocker : MonoBehaviour
                 PlayerPrefs.SetInt("LevelsUnlocked", 1);
                 PlayerPrefs.Save();
             }
-            PlayerPrefs.SetInt("LevelsUnlocked", 3);
-            PlayerPrefs.Save();
+         
+                PlayerPrefs.SetInt("LevelsUnlocked", 3);
+                PlayerPrefs.Save();
+
         }
     }
 }

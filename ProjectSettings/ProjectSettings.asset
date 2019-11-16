@@ -118,7 +118,11 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
+<<<<<<< Updated upstream
   bundleVersion: 1.0.3
+=======
+  bundleVersion: 1.0.5.1
+>>>>>>> Stashed changes
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -159,7 +163,11 @@ PlayerSettings:
     tvOS: com.Company.ProductName
   buildNumber:
     iOS: 
+<<<<<<< Updated upstream
   AndroidBundleVersionCode: 5
+=======
+  AndroidBundleVersionCode: 8
+>>>>>>> Stashed changes
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
