@@ -7,7 +7,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
     public Joystick joystick;
     public Joystick button;
-    public float speed = 0.2f;
+    public float speed = 0.1f;
     Vector2 _dest = Vector2.zero;
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
@@ -181,12 +181,12 @@ public class PlayerControllerStoryMode : MonoBehaviour
                 if (Valid(_nextDir)){
                     _dest = (Vector2)transform.position + _nextDir;
                     _dir = _nextDir;
-                    speed = 0.2f;
+                    speed = 0.1f;
                 }else{
                     if (Valid(_dir)) // and the prev. direction is valid
                     {
                         _dest = (Vector2)transform.position + _dir;   // continue on that direction
-                        speed = 0.2f;
+                        speed = 0.1f;
                     }
                 }
             }
