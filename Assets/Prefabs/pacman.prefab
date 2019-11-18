@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6944842659125445613}
   - component: {fileID: 6944842659125445612}
   - component: {fileID: 6944842659125445615}
-  - component: {fileID: 6944842659125445614}
   - component: {fileID: 6944842659125445601}
   m_Layer: 0
   m_Name: pacman
@@ -140,22 +139,6 @@ CircleCollider2D:
   m_Offset: {x: 0.51423573, y: 0.34573254}
   serializedVersion: 2
   m_Radius: 4.2351975
---- !u!114 &6944842659125445614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944842659125445600}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e427bd9234206484bb771656d14c9b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
-  speed: 0.2
-  points:
-    pointSprites: []
 --- !u!114 &6944842659125445601
 MonoBehaviour:
   m_ObjectHideFlags: 0
