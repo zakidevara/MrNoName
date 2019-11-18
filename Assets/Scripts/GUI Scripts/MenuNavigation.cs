@@ -1,21 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class MenuNavigation : MonoBehaviour {
+    public FirebaseInit firebase;
 
-	public void MainMenu()
+    public void Start()
+    {
+        firebase = GameObject.Find("FireBase").GetComponent<FirebaseInit>();
+    }
+    public void MainMenu()
 	{
 		Application.LoadLevel("menu");
 	}
 
 	public void Quit()
 	{
+        firebase.PostToDatabase(new UserAvgSession());
+        firebase.Logout();
 		Application.Quit();
 	}
 	
 	public void Play()
 	{
-		Application.LoadLevel("game");
+        Firebase.Analytics.FirebaseAnalytics
+        .LogEvent("playing_classic_mode", "time_started_playing", DateTime.Now.ToString());
+        Application.LoadLevel("game");
 	}
 	
 	public void HighScores()
