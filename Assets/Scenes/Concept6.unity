@@ -1567,8 +1567,13 @@ PrefabInstance:
     - target: {fileID: 4272395189974132389, guid: 08df6b8abb4385d4dbf34d92a82642b1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4272395189974132389, guid: 08df6b8abb4385d4dbf34d92a82642b1,
+        type: 3}
+      propertyPath: transformB
+      value: 
+      objectReference: {fileID: 112911509}
     - target: {fileID: 4272395191291838511, guid: 08df6b8abb4385d4dbf34d92a82642b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2794,7 +2799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701069233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: -46.5, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1147847658}
@@ -4397,13 +4402,13 @@ PrefabInstance:
     - target: {fileID: 4272395189974132389, guid: 08df6b8abb4385d4dbf34d92a82642b1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4272395189974132389, guid: 08df6b8abb4385d4dbf34d92a82642b1,
         type: 3}
       propertyPath: transformB
       value: 
-      objectReference: {fileID: 701069234}
+      objectReference: {fileID: 207652985}
     - target: {fileID: 4272395191291838511, guid: 08df6b8abb4385d4dbf34d92a82642b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4735,7 +4740,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105398547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 577314ecaeb35aa4b9fa56bb566c20e9, type: 3}
   m_Name: 
@@ -11961,7 +11966,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147847653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 577314ecaeb35aa4b9fa56bb566c20e9, type: 3}
   m_Name: 
@@ -12495,7 +12500,7 @@ Camera:
   far clip plane: 1000
   field of view: 26.991467
   orthographic: 1
-  orthographic size: 6.8645144
+  orthographic size: 30.467985
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12898,7 +12903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633352229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: -55.5, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1105398552}
