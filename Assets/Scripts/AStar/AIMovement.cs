@@ -19,7 +19,7 @@ public class AIMovement : MonoBehaviour
     {
         //target = GameObject.Find("noname"); 
         target = GameObject.Find("pacman");
-        if(target == null) GameObject.Find("nosis");
+        if(target == null) target = GameObject.Find("nosis");
         pathfinding = this.GetComponentInParent<AStarPathfinding>();
         this.transform.position = spawn;
     }
@@ -28,7 +28,7 @@ public class AIMovement : MonoBehaviour
     void Update()
     {
         targetLoc = target.transform.position;
-        if (Vector3.Distance(this.transform.position, targetLoc) <= aggroRange)
+        if (Vector3.Distance(spawn, targetLoc) <= aggroRange)
         {
             path = pathfinding.FindPath(this.GetComponentInParent<Transform>().position, targetLoc);
             if (path.Count > 0)
@@ -37,7 +37,11 @@ public class AIMovement : MonoBehaviour
             }
         }
         else {
-            this.transform.position = Vector3.MoveTowards(transform.position,spawn, speed * Time.deltaTime);
+            path = pathfinding.FindPath(this.GetComponentInParent<Transform>().position, spawn);
+            if (path.Count > 0)
+            {
+                this.transform.position = Vector3.MoveTowards(transform.position, pathfinding.WorldPointFromNode(path[0]), speed * Time.deltaTime);
+            }
         }
 
     }
