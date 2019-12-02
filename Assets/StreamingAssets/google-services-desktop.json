@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "278546184490",
+    "firebase_url": "https://brorun-horror-adventure-8806.firebaseio.com",
+    "project_id": "brorun---horror-adventure-8806",
+    "storage_bucket": "brorun---horror-adventure-8806.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278546184490:android:8f3302246f5076cab98653",
+        "android_client_info": {
+          "package_name": "com.brogames.noname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278546184490-0l388br3lnlik4h9p3mfsk6k50bk00rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O1kJMjAsLIHn_5Kgjf_lJmZnLkKilKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278546184490-0l388br3lnlik4h9p3mfsk6k50bk00rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
