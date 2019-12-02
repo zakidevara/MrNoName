@@ -13,7 +13,6 @@ public class GPGSAuth : MonoBehaviour
 
         firebase = GameObject.Find("FireBase").GetComponent<FirebaseInit>();
         if (platform == null) {
-
             PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
             PlayGamesPlatform.InitializeInstance(config);
             PlayGamesPlatform.DebugLogEnabled = true;

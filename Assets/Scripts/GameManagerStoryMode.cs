@@ -163,6 +163,8 @@ public class GameManagerStoryMode : MonoBehaviour {
                 e.GetComponent<BabyBroMove>().enabled = false;
             if(e.GetComponent<patrolBigBro>() != null)
                 e.GetComponent<patrolBigBro>().enabled = false;
+            if (e.GetComponent<AIMovement>() != null)
+                e.GetComponent<AIMovement>().enabled = false;
         }
     }
     public void disableTrapMovements()
@@ -185,6 +187,10 @@ public class GameManagerStoryMode : MonoBehaviour {
                 e.GetComponent<BabyBroMove>().enabled = true;
             if (e.GetComponent<patrolBigBro>() != null)
                 e.GetComponent<patrolBigBro>().enabled = true;
+            if (e.GetComponent<AIMovement>() != null) {
+                e.GetComponent<AIMovement>().enabled = true;
+                e.transform.position = e.GetComponent<AIMovement>().spawn;
+            }
         }
     }
     public void enableTrapMovements()

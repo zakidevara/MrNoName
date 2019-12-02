@@ -7,7 +7,7 @@ public class PlayerControllerStoryMode : MonoBehaviour
 
     public Joystick joystick;
     public Joystick button;
-    public float speed = 0.1f;
+    public float speed;
     Vector2 _dest = Vector2.zero;
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;

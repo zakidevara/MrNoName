@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6775,6 +6775,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 101130066}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284057719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284057718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ab77138aecb4f40827a83ce7be7775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 1916155873}
+  button: {fileID: 0}
+  speed: 0.1
+  dashCooldown: 0
+  dashSpeed: 0
+  dashDistance: 0
+  dashEffect: {fileID: 0}
+  points:
+    pointSprites: []
 --- !u!4 &1284057725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,

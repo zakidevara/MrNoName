@@ -2468,18 +2468,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &91661981 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-    type: 3}
-  m_PrefabInstance: {fileID: 268871925}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e427bd9234206484bb771656d14c9b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &108699778
 GameObject:
   m_ObjectHideFlags: 0
@@ -6097,10 +6085,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 453008177}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445600, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Name
       value: pacman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 453008177}
+    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: speed
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445611, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
@@ -6172,31 +6183,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.36637563
       objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 453008177}
-    - target: {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 453008177}
-    - target: {fileID: 6944842659125445614, guid: ab457b46b59720a4bb143196f7a8c576,
-        type: 3}
-      propertyPath: speed
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 6944842659125445615, guid: ab457b46b59720a4bb143196f7a8c576,
         type: 3}
       propertyPath: m_Offset.x
@@ -6212,8 +6198,12 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 3.5932724
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6944842659125445601, guid: ab457b46b59720a4bb143196f7a8c576, type: 3}
+    - target: {fileID: 6944842659125445612, guid: ab457b46b59720a4bb143196f7a8c576,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab457b46b59720a4bb143196f7a8c576, type: 3}
 --- !u!1 &270966675
 GameObject:
@@ -11285,7 +11275,7 @@ PrefabInstance:
     - target: {fileID: 11454750, guid: db15fdab6be0e104fbcf2c44afaad894, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 91661981}
+      objectReference: {fileID: 0}
     - target: {fileID: 11454750, guid: db15fdab6be0e104fbcf2c44afaad894, type: 3}
       propertyPath: speed
       value: 0.15
@@ -22167,7 +22157,7 @@ PrefabInstance:
     - target: {fileID: 11494802, guid: bc6b2f74c0c842443b5d21543c3e5e16, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 91661981}
+      objectReference: {fileID: 0}
     - target: {fileID: 11494802, guid: bc6b2f74c0c842443b5d21543c3e5e16, type: 3}
       propertyPath: speed
       value: 0.15
@@ -33391,6 +33381,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1501446456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6944842659125445600, guid: ab457b46b59720a4bb143196f7a8c576,
+    type: 3}
+  m_PrefabInstance: {fileID: 268871925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1501446457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501446456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e427bd9234206484bb771656d14c9b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 453008177}
+  speed: 0.2
+  points:
+    pointSprites: []
 --- !u!1 &1514327385
 GameObject:
   m_ObjectHideFlags: 0
@@ -47615,21 +47627,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dynamic Joystick
       objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: snapY
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-        type: 3}
-      propertyPath: deadZone
-      value: 0.35
-      objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47745,6 +47742,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: snapY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
+        type: 3}
+      propertyPath: deadZone
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_Sprite
@@ -47850,7 +47862,7 @@ PrefabInstance:
     - target: {fileID: 11451032, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 91661981}
+      objectReference: {fileID: 0}
     - target: {fileID: 11451032, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 3}
       propertyPath: speed
       value: 0.15
@@ -48068,7 +48080,7 @@ PrefabInstance:
     - target: {fileID: 11454592, guid: 9f090580268dde54d8def18b84c4dbab, type: 3}
       propertyPath: pacman
       value: 
-      objectReference: {fileID: 91661981}
+      objectReference: {fileID: 0}
     - target: {fileID: 11454592, guid: 9f090580268dde54d8def18b84c4dbab, type: 3}
       propertyPath: speed
       value: 0.15
