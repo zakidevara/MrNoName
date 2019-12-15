@@ -16,7 +16,7 @@ public class nextLevel : MonoBehaviour
     void Start()
     {
         nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1 ;
-
+        _gm = GameObject.Find("Game Manager").GetComponent<GameManagerStoryMode>();
         
     }
 
@@ -24,8 +24,8 @@ public class nextLevel : MonoBehaviour
 	{
 		if(other.name == "pacman"||other.name == "nosis")
 		{
-           
-
+            _gm.respawnX=-0.479f;
+            _gm.respawnY=0.461f;
             SceneManager.LoadScene(nextSceneToLoad);
 		}
 	}
