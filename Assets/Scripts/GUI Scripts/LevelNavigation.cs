@@ -26,6 +26,9 @@ public class LevelNavigation : MonoBehaviour
     public void level5()
     {
         Application.LoadLevel("level5");
-
+    }
+    public void level6()
+    {
+        Application.LoadLevel("level6");
     }
 }
